@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: #add8e6;
+            width: 800px;
+            margin-left: 20px;
+            height: 1070px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        table tr td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-left: 20px;
+            padding-bottom: 20px;
+        }
+        td {
+            padding: 10px;
+        }
+        .date {
+            margin-bottom: 5px;
+        }
+
+        .vb1 {
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <h1><b>Đăng ký thành viên</b></h1>
+    <table>
+        <tr>
+            <td width="100px">Họ tên:</td>
+            <td><input type="text" name="hoTen" id="hoten" placeholder="Vui lòng nhập Họ tên"></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu:</td>
+            <td><input type="password" name="matKhau" id="mk" placeholder="Vui lòng nhập Mật khẩu"></td>
+        </tr>
+        <tr>
+            <td>Giới tính:</td>
+            <td>
+                <input type="radio" name="gtinh" id="nam">
+                <label for="n">Nam</label>
+                <input type="radio" name="gtinh" id="nu">
+                <label for="nu">Nữ</label>
+                <input type="radio" name="gtinh" id="ko">
+                <label for="ko">Không công bố</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Sở thích</td>
+            <td>
+                <input type="checkbox" name="hobby" id="phim">
+                <label for="phim">Xem phim</label><br>
+                <input type="checkbox" name="hobby" id="sach">
+                <label for="sach">Đọc sách</label><br>
+                <input type="checkbox" name="hobby" id="nhac">
+                <label for="nhac">Nghe nhạc</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Tuổi:</td>
+            <td><input type="text" name="age" id="age" value="15"></td>
+        </tr>
+        <tr>
+            <td>Từ khóa tìm kiếm:</td>
+            <td><input type="text" value="tu khoa"></td>
+        </tr>
+        <tr>
+            <td>Giới thiệu bản thân:</td>
+            <td><textarea name="gthieu" id="gthieu" cols="80" rows="7" placeholder="Xin chào, tôi tên Cường..."></textarea></td>
+        </tr>
+        <tr>
+            <td>Email có thể liên hệ:</td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Địa chỉ web của bạn:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Số điện thoại:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Các loại chọn thời gian</td>
+            <td>
+                <p class="vb1">Ngày tháng</p>
+                <label for="day">Chọn ngày:</label>
+                <input type="date" name="ngay"  id="day" class="date"><br>
+                <label for="month">Chọn tháng:</label>
+                <input type="month" name="month" id="month" class="date"><br>
+                <label for="week">Chọn tuần:</label>
+                <input type="week" name="week" id="week">
+                <br>
+                <p class="vb1">Giờ</p>
+                <label for="time">Chọn Giờ:</label>
+                <input type="time" name="time" id="time" class="date"><br>
+                <label for="all">Chọn cả Ngày - Giờ</label>
+                <input type="datetime-local" name="all" id="all">
+            </td>
+        </tr>
+        <tr>
+            <td>Màu yêu thích:</td>
+            <td><input type="color"></td>
+        </tr>
+        <tr>
+            <td>Bạn đang sinh sống ở TP/Tỉnh nào?</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

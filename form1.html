@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #form1 {
+            width: 500px;
+            border: 1px solid black;
+            background-color: #add8e6;
+        }
+
+        #vb1 {
+            text-align: center;
+            font-size: 21px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
+
+        hr {
+            background-color: white;
+            margin: 0 20px 0 30px;
+            border: 1px solid white;
+        }
+
+        form {
+            padding: 20px 30px;
+        }
+
+        .itext {
+            width: 100%;
+            height: 25px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        #Course {
+            margin-bottom: 10px;
+        }
+
+        #male {
+            margin: 7px 0 10px 0;
+        }
+
+        #button1 {
+            background-color: #56b35f;
+            width: 103%;
+            height: 30px;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="form1">
+    <p id="vb1">Student Registeration Form</p>
+    <hr>
+    <form action="">
+        <label for="firstName">Firstname:</label><br>
+        <input type="text" id="firstName" name="ho" placeholder="Firstname" class="itext"><br>
+        <label for="Middlename">Middlename:</label><br>
+        <input type="text" id="Middlename" name="tenDem" placeholder="Middlename" class="itext"><br>
+        <label for="Lastname">Lastname:</label><br>
+        <input type="text" id="Lastname" name="ten" placeholder="Lastname" class="itext"><br>
+        <label for="Course">Course:</label>
+        <select name="course" id="Course">
+            <option value="Course" selected>Course</option>
+        </select><br>
+        <span>Gender:</span><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label><br>
+        <label for="Phone">Phone:</label><br>
+        <input type="text" name="dienThoai" id="Phone" value="+91" class="itext"><br>
+        <input type="text" name="noPhone" id="Phone" placeholder="phone no" class="itext"><br>
+        <label for="diachi">Current Address:</label><br>
+        <textarea name="diaChi" id="diachi" rows="5" placeholder="Current Address"></textarea><br>
+        <label for="email"><b>Email</b></label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Email" class="itext"><br>
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" name="matKhau" id="password" placeholder="Enter Password" class="itext"><br>
+        <label for="matkhau"><b>Re-type Password</b></label><br>
+        <input type="password" name="matKhau" id="matkhau" placeholder="Retype Password" class="itext"><br>
+        <button type="submit" id="button1">Register</button>
+    </form>
+    </div>
+</body>
+</html>

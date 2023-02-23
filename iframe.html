@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN buổi 3</title>
+</head>
+<body>
+    <h2>Câu 1: Bài tập về Iframe</h2>
+    <p><b>Yêu cầu:</b> Vào trang google map, tìm 1 địa điểm yêu thích và nhúng thẻ iframe của google map vào website. Để hiển thị được như sau:</p>
+    <p><b>Lưu ý:</b> Thử tự lên google tìm hiểu cách nhúng bản đồ vào website.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.245320258506!2d107.59233541431163!3d16.463111233135727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13e8ec40d09%3A0xc669dbfc2743e474!2sVincom%20Plaza%20Hu%E1%BA%BF!5e0!3m2!1svi!2s!4v1673176379459!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <h2>Câu 2: Bài tập về form</h2>
+    <p><b>Yêu cầu</b>: Tạo form <b>đăng ký</b> như form bên dưới. Phải có cả thẻ form bọc bên ngoài. Khi click vào thẻ label thì phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu cầu nhập nội dung mới cho Đăng ký.</p>
+    <form action="" target="_blank" >
+        <div> 
+            <label for="fullname" >Họ tên:</label><br>
+            <input type="text" id="fullname" name="fullName" placeholder="Ví dụ: levana" required>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Ví dụ: levana@gmail.com" required>
+        </div>
+        <div>
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button >Đăng ký</button>
+    </form>
+    <p><b>Yêu cầu</b>: Tạo form <b>tìm kiếm</b> như dưới đây: (Phải có cả thẻ form bọc bên ngoài. Phải nhập nội dung mới cho bấm Tìm kiếm.)
+    </p>
+    <form action="">
+        <input type="text" placeholder="Nhập nội dung tìm kiếm..." required>
+        <button>Tìm kiếm</button>
+    </form>
+
+    <h2>Câu 3: Bài tập để ôn lại kiến thức về form</h2>
+    <p><b>Yêu cầu:</b> Vẽ lại các thẻ dưới đây:</p>
+    <p><b>- Thẻ input:</b></p>
+    <div>
+        <span>Kiểu text:</span><br>
+        <input type="text" placeholder="Nhập họ tên...">
+    </div><br>
+    <div>
+        <span>Kiểu email:</span><br>
+        <input type="email" placeholder="Nhập email">
+    </div><br>
+    <div>
+        <span>Kiểu password:</span><br>
+        <input type="password">
+    </div><br>
+    <div>
+        <span>Kiểu number:</span><br>
+        <input type="number">
+    </div><br>
+    <div>
+        <span>Kiểu date:</span><br>
+        <input type="date">
+    </div><br>
+    <div>
+        <span>Kiểu time:</span><br>
+        <input type="time">
+    </div><br>
+    <div>
+        <span>Kiểu file:</span><br>
+        <input type="file">
+    </div><br>
+    <div>
+        <span>Kiểu radio:</span><br>
+        <input type="radio" id="nam" name="gtinh" value="nam">
+        <label for="nam">Nam</label><br>
+        <input type="radio" id="nu" name="gtinh" value="nu">
+        <label for="nu">Nữ</label><br>
+        <input type="radio" id="khac" name="gtinh" value="khac">
+        <label for="khac">Khác</label>
+    </div><br>
+    <div>
+        <span>Kiểu range:</span><br>
+        <label for="volumn">Âm lượng (min=0 và max=100):</label><br>
+        <input type="range" id="volumn" name="amLuong" min="0" max="100">
+    </div> <br>
+    <div>
+        <span>Kiểu color:</span><br>
+        <input type="color">
+    </div>
+    <p><b>- Thẻ select:</b></p>
+        <label for="dsach">Chọn danh mục:</label><br>
+        <select name="dsach" id="dsach">
+            <option value="quần">Quần</option>
+            <option value="áo">Áo</option>
+            <option value="mũ" >Mũ</option>
+            <option value="Khăn">Khăn</option>
+        </select>
+    <p><b>- Thẻ textarea (có cols = 30 và rows = 10):</b></p>
+    <textarea cols="30" rows="10"></textarea>
+</body>
+</html>
